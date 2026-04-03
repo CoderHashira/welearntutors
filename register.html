@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | WELEARNTUTORS</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+
+    <header>
+        <nav class="nav premium-nav">
+            <a href="index.html" class="logo">
+                <img src="/images/Untitled design.png" alt="WELEARNTUTORS Logo">
+            </a>
+
+            <button class="hamburger" id="hamburger" aria-label="Open menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <ul class="nav-items premium-menu" id="nav-items">
+                <li class="nav-item">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="get-tutor.html">Get A Tutor</a>
+                </li>
+                <li class="nav-item">
+                    <a href="become-tutor.html">Become A Tutor</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a href="register.html" class="navbar-button">Register</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero register-page-hero">
+            <div class="page-hero-content">
+                <p class="hero-tag">Create your account</p>
+                <h1>Register for WELEARNTUTORS</h1>
+                <p>
+                    Create an account to access your dashboard, manage your learning journey,
+                    or join our platform as a tutor or student.
+                </p>
+            </div>
+        </section>
+
+        <section class="section register-section">
+            <div class="register-wrapper">
+                <div class="register-info-card">
+                    <p class="section-tag">Get started</p>
+                    <h2>Join the WELEARNTUTORS platform</h2>
+                    <p>
+                        Register as a student, tutor, or administrator and get access to the tools
+                        and support designed for your role.
+                    </p>
+
+                    <div class="register-benefits">
+                        <article class="register-benefit-card">
+                            <h3>Student Access</h3>
+                            <p>Track your lessons, progress, and academic support in one place.</p>
+                        </article>
+
+                        <article class="register-benefit-card">
+                            <h3>Tutor Access</h3>
+                            <p>Manage students, schedules, reports, and teaching resources.</p>
+                        </article>
+
+                        <article class="register-benefit-card">
+                            <h3>Admin Access</h3>
+                            <p>Oversee tutors, students, applications, and requests efficiently.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="register-form-card">
+                    <p class="form-label">Account registration</p>
+                    <h2>Create account</h2>
+
+                    <form class="register-form" id="register-form">
+                        <div class="form-status" id="register-status" aria-live="polite"></div>
+
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="register-full-name">Full Name</label>
+                                <input
+                                    type="text"
+                                    id="register-full-name"
+                                    name="fullName"
+                                    placeholder="Enter your full name"
+                                    autocomplete="name"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="register-email">Email Address</label>
+                                <input
+                                    type="email"
+                                    id="register-email"
+                                    name="email"
+                                    placeholder="Enter your email address"
+                                    autocomplete="email"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="register-password">Password</label>
+                                <input
+                                    type="password"
+                                    id="register-password"
+                                    name="password"
+                                    placeholder="Create a password"
+                                    autocomplete="new-password"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="register-confirm-password">Confirm Password</label>
+                                <input
+                                    type="password"
+                                    id="register-confirm-password"
+                                    name="confirmPassword"
+                                    placeholder="Confirm your password"
+                                    autocomplete="new-password"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="register-role">Register As</label>
+                                <select id="register-role" name="role" required>
+                                    <option value="">Select role</option>
+                                    <option value="student">Student</option>
+                                    <option value="tutor">Tutor</option>
+                                    <option value="admin">Admin</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary submit-btn">Create Account</button>
+
+                        <p class="form-note">
+                            Already have an account?
+                            <a href="login.html" class="register-login-link">Login here</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 WELEARNTUTORS. All rights reserved.</p>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

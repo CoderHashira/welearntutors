@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apply to become a WELEARNTUTORS tutor and support South African learners in Mathematics, Physical Sciences, and Life Sciences.">
+    <title>Become A Tutor | WELEARNTUTORS</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <header>
+        <nav class="nav premium-nav" aria-label="Main navigation">
+            <a href="index.html" class="logo">
+                <img src="/images/Untitled design.png" alt="WELEARNTUTORS logo">
+            </a>
+
+            <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-items">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <ul class="nav-items premium-menu" id="nav-items">
+                <li class="nav-item">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="get-tutor.html">Get A Tutor</a>
+                </li>
+                <li class="nav-item">
+                    <a href="become-tutor.html" class="navbar-button" aria-current="page">Become A Tutor</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero become-tutor-page-hero">
+            <div class="page-hero-content">
+                <p class="hero-tag">Join our tutoring team</p>
+                <h1>Become a tutor and help learners succeed</h1>
+                <p>
+                    If you are passionate about teaching and supporting students in Mathematics, Physical Sciences,
+                    or Life Sciences, apply below and send your details for review.
+                </p>
+            </div>
+        </section>
+
+        <section class="section tutor-application-section">
+            <div class="tutor-application-wrapper">
+                <div class="tutor-application-info">
+                    <p class="section-tag">Why join WELEARNTUTORS</p>
+                    <h2>Teach with purpose and make a real academic difference</h2>
+                    <p>
+                        We are looking for committed tutors who can explain concepts clearly, connect with learners,
+                        and provide focused academic support that builds confidence and results.
+                    </p>
+
+                    <div class="application-benefits">
+                        <article class="application-benefit-card">
+                            <h3>Meaningful Impact</h3>
+                            <p>Help students overcome challenges, improve understanding, and perform better academically.</p>
+                        </article>
+
+                        <article class="application-benefit-card">
+                            <h3>Flexible Online Teaching</h3>
+                            <p>Work in a way that supports online learning and allows flexibility around scheduling.</p>
+                        </article>
+
+                        <article class="application-benefit-card">
+                            <h3>Growth Opportunity</h3>
+                            <p>Be part of a growing tutoring platform focused on quality support for South African learners.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="tutor-application-form-card">
+                    <p class="form-label">Tutor application form</p>
+                    <h2>Apply to become a tutor</h2>
+
+                    <form class="tutor-application-form" id="tutor-application-form">
+                        <div class="form-status" id="tutor-application-status" aria-live="polite"></div>
+
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="full-name">Full Name</label>
+                                <input
+                                    type="text"
+                                    id="full-name"
+                                    name="full_name"
+                                    placeholder="Enter your full name"
+                                    autocomplete="name"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Enter your email address"
+                                    autocomplete="email"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    placeholder="Enter your phone number"
+                                    autocomplete="tel"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="location">Location</label>
+                                <input
+                                    type="text"
+                                    id="location"
+                                    name="location"
+                                    placeholder="City / Province"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject-speciality">Main Subject</label>
+                                <select id="subject-speciality" name="main_subject" required>
+                                    <option value="">Select subject</option>
+                                    <option value="Mathematics">Mathematics</option>
+                                    <option value="Physical Sciences">Physical Sciences</option>
+                                    <option value="Life Sciences">Life Sciences</option>
+                                    <option value="More than one subject">More than one subject</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="teaching-level">Preferred Teaching Level</label>
+                                <select id="teaching-level" name="teaching_level" required>
+                                    <option value="">Select level</option>
+                                    <option value="Grade 8">Grade 8</option>
+                                    <option value="Grade 9">Grade 9</option>
+                                    <option value="Grade 10">Grade 10</option>
+                                    <option value="Grade 11">Grade 11</option>
+                                    <option value="Grade 12">Grade 12</option>
+                                    <option value="Multiple Grades">Multiple Grades</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="qualifications">Qualifications / Experience</label>
+                            <textarea
+                                id="qualifications"
+                                name="qualifications"
+                                rows="5"
+                                placeholder="Briefly tell us about your qualifications, tutoring experience, or teaching background."
+                                required
+                            ></textarea>
+                        </div>
+
+                        <div class="form-group full-width file-upload-group">
+                            <label for="resume-link">Resume / CV Link</label>
+                            <input
+                                type="url"
+                                id="resume-link"
+                                name="resume_link"
+                                placeholder="Paste a Google Drive, Dropbox, or OneDrive resume link"
+                                autocomplete="url"
+                                required
+                            >
+                            <p class="upload-note">Use a shareable link to your CV or resume.</p>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary submit-btn">Submit Application</button>
+                        <p class="form-note">This form sends through EmailJS. Replace your EmailJS keys in the JavaScript before going live.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 WELEARNTUTORS. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>

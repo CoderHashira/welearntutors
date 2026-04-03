@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Request a tutor from WELEARNTUTORS for Mathematics, Physical Sciences, and Life Sciences online support.">
+    <title>Get A Tutor | WELEARNTUTORS</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <header>
+        <nav class="nav premium-nav" aria-label="Main navigation">
+            <a href="index.html" class="logo">
+                <img src="/images/Untitled design.png" alt="WELEARNTUTORS logo">
+            </a>
+
+            <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-items">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <ul class="nav-items premium-menu" id="nav-items">
+                <li class="nav-item">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="get-tutor.html" class="navbar-button" aria-current="page">Get A Tutor</a>
+                </li>
+                <li class="nav-item">
+                    <a href="become-tutor.html">Become A Tutor</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero tutor-page-hero">
+            <div class="page-hero-content">
+                <p class="hero-tag">Book academic support today</p>
+                <h1>Find the right tutor for your child</h1>
+                <p>
+                    Complete the form below and we will help you get started with personalised online tutoring
+                    in Mathematics, Physical Sciences, or Life Sciences.
+                </p>
+            </div>
+        </section>
+
+        <section class="section tutor-request-section">
+            <div class="tutor-request-wrapper">
+                <div class="tutor-request-info">
+                    <p class="section-tag">Why request a tutor?</p>
+                    <h2>Support that helps learners improve with confidence</h2>
+                    <p>
+                        Our tutoring sessions are designed to strengthen understanding, improve performance,
+                        and give students focused one-on-one guidance where they need it most.
+                    </p>
+
+                    <div class="request-benefits">
+                        <article class="request-benefit-card">
+                            <h3>Personalised Lessons</h3>
+                            <p>Each learner gets support based on their own strengths, gaps, and academic goals.</p>
+                        </article>
+
+                        <article class="request-benefit-card">
+                            <h3>Flexible Online Learning</h3>
+                            <p>Book lessons from anywhere and fit tutoring around school schedules and revision time.</p>
+                        </article>
+
+                        <article class="request-benefit-card">
+                            <h3>Focused Subject Support</h3>
+                            <p>Get help in key subjects that matter for exams, marks, and future opportunities.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="tutor-form-card">
+                    <p class="form-label">Tutor request form</p>
+                    <h2>Get matched with a tutor</h2>
+
+                    <form class="tutor-request-form" id="tutor-request-form">
+                        <div class="form-status" id="tutor-request-status" aria-live="polite"></div>
+
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="parent-name">Parent / Guardian Name</label>
+                                <input
+                                    type="text"
+                                    id="parent-name"
+                                    name="parent_name"
+                                    placeholder="Enter full name"
+                                    autocomplete="name"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="student-name">Student Name</label>
+                                <input
+                                    type="text"
+                                    id="student-name"
+                                    name="student_name"
+                                    placeholder="Enter student name"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Enter email address"
+                                    autocomplete="email"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    placeholder="Enter phone number"
+                                    autocomplete="tel"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="grade">Grade</label>
+                                <select id="grade" name="grade" required>
+                                    <option value="">Select grade</option>
+                                    <option value="Grade 8">Grade 8</option>
+                                    <option value="Grade 9">Grade 9</option>
+                                    <option value="Grade 10">Grade 10</option>
+                                    <option value="Grade 11">Grade 11</option>
+                                    <option value="Grade 12">Grade 12</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select subject</option>
+                                    <option value="Mathematics">Mathematics</option>
+                                    <option value="Physical Sciences">Physical Sciences</option>
+                                    <option value="Life Sciences">Life Sciences</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="learning-mode">Preferred Lesson Type</label>
+                            <select id="learning-mode" name="lesson_type" required>
+                                <option value="">Select lesson type</option>
+                                <option value="One-on-One Tutoring">One-on-One Tutoring</option>
+                                <option value="Revision Support">Revision Support</option>
+                                <option value="Exam Preparation">Exam Preparation</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="message">Additional Information</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="5"
+                                placeholder="Tell us about the learner's needs, challenges, or preferred times."
+                            ></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary submit-btn">Submit Request</button>
+                        <p class="form-note">This form sends through EmailJS. Replace your EmailJS keys in the JavaScript before going live.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 WELEARNTUTORS. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>

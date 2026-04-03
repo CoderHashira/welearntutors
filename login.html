@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Login to your WELEARNTUTORS account to access dashboards, manage tutoring, and continue your learning journey.">
+    <title>Login | WELEARNTUTORS</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+
+    <header>
+        <nav class="nav premium-nav" aria-label="Main navigation">
+            <a href="index.html" class="logo">
+                <img src="/images/Untitled design.png" alt="WELEARNTUTORS logo">
+            </a>
+
+            <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-items">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <ul class="nav-items premium-menu" id="nav-items">
+                <li class="nav-item">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="get-tutor.html">Get A Tutor</a>
+                </li>
+                <li class="nav-item">
+                    <a href="become-tutor.html">Become A Tutor</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="navbar-button" aria-current="page">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero login-page-hero">
+            <div class="page-hero-content">
+                <p class="hero-tag">Secure access</p>
+                <h1>Login to your WELEARNTUTORS account</h1>
+                <p>
+                    Access your dashboard, manage your profile, and continue your tutoring journey with a secure login.
+                </p>
+            </div>
+        </section>
+
+        <section class="section login-section">
+            <div class="login-wrapper">
+                <div class="login-info-card">
+                    <p class="section-tag">Welcome back</p>
+                    <h2>Simple and secure account access</h2>
+                    <p>
+                        Login to manage tutoring requests, tutor applications, and future student support tools as your platform grows.
+                    </p>
+
+                    <div class="login-benefits">
+                        <article class="login-benefit-card">
+                            <h3>Easy Access</h3>
+                            <p>Sign in quickly and continue from where you left off.</p>
+                        </article>
+
+                        <article class="login-benefit-card">
+                            <h3>Secure Experience</h3>
+                            <p>Your account area is designed for safe and reliable access.</p>
+                        </article>
+
+                        <article class="login-benefit-card">
+                            <h3>Built for Growth</h3>
+                            <p>This login page is ready for future dashboard and portal features.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="login-form-card">
+                    <p class="form-label">Account login</p>
+                    <h2>Sign in</h2>
+
+                    <form class="login-form" id="login-form">
+                        <div class="login-status" id="login-status" role="status" aria-live="polite"></div>
+
+                        <div class="form-group full-width">
+                            <label for="login-email">Email Address</label>
+                            <input
+                                type="email"
+                                id="login-email"
+                                name="login-email"
+                                placeholder="Enter your email address"
+                                autocomplete="email"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="login-password">Password</label>
+                            <input
+                                type="password"
+                                id="login-password"
+                                name="login-password"
+                                placeholder="Enter your password"
+                                autocomplete="current-password"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="login-role">Login Role</label>
+                            <select id="login-role" name="login-role" required>
+                                <option value="">Select role</option>
+                                <option value="admin">Admin</option>
+                                <option value="student">Student</option>
+                                <option value="tutor">Tutor</option>
+                            </select>
+                        </div>
+
+                        <div class="login-form-options">
+                            <label class="remember-me">
+                                <input type="checkbox" name="remember-me">
+                                <span>Remember me</span>
+                            </label>
+                            <a href="#" class="forgot-password">Forgot password?</a>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary submit-btn">Login</button>
+
+                        <p class="form-note">
+                            Don’t have an account?
+                            <a href="register.html" class="register-link">Create one here</a>
+                        </p>
+
+                        <p class="form-note">
+                            Demo logins for now:<br>
+                            <strong>Admin:</strong> admin@welearntutors.co.za / Admin@123<br>
+                            <strong>Student:</strong> student@welearntutors.co.za / Student@123<br>
+                            <strong>Tutor:</strong> tutor@welearntutors.co.za / Tutor@123
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 WELEARNTUTORS. All rights reserved.</p>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
